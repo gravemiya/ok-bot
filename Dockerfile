@@ -23,5 +23,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копируем код бота
 COPY okru_post_bot.py .
 
+# Открываем порт для вебхука
+EXPOSE 5000
+
 # Команда запуска
 CMD ["python", "okru_post_bot.py"]
